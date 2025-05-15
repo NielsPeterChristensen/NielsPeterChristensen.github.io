@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  text-align: center;
+}
+
+img.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 10px;
+}
+
+nav {
+  margin-top: 20px;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #007acc;
+}
+
+section.intro {
+  margin-top: 30px;
+}
+
+.links {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #444;
+}
