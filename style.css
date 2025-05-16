@@ -20,10 +20,11 @@ img.profile-pic {
 }
 
 nav {
-  border-top: 1px solid #ddd;
+  border-top: 5px solid #ccc;
   margin-top: 30px;
   padding-top: 15px;
   text-align: center;
+  background-color: #eaeaea;
 }
 
 nav a {
