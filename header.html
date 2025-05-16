@@ -2,31 +2,26 @@
   <h1>Niels Peter Christensen</h1>
   <img src="/assets/img/profile.jpg" alt="profile picture" class="profile-pic">
   <div class="links">
-    <a href="https://github.com/NielsPeterChristensen" target="_blank" rel="noopener noreferrer">
-      <img src="/assets/icon/github_europass_icon.svg" alt="GitHub"> GitHub
+
+    <a href="https://github.com/NielsPeterChristensen" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center;"></a>
+      <img src="/assets/icon/github_europass_icon.svg" alt="Github" style="width: 20px; height: 20px; margin-right: 6px;">
+      GitHub
     </a>
-    <a href="https://linkedin.com/in/nielspeterkc" target="_blank" rel="noopener noreferrer">
-      <img src="/assets/icon/linkedin_europass_icon.svg" alt="LinkedIn"> LinkedIn
+
+    <a href="https://linkedin.com/in/nielspeterkc" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center;">
+      <img src="/assets/icon/linkedin_europass_icon.svg" alt="LinkedIn" style="width: 20px; height: 20px; margin-right: 6px;">
+      LinkedIn
     </a>
-    <button id="copy-email">
-      <img src="/assets/icon/mail_europass_icon.svg" alt="Email"> Email
+
+    <button id="copy-email" style="display: inline-flex; align-items: center; background: none; border: none; cursor: pointer; padding:0; margin:0;">
+      <img src="/assets/icon/mail_europass_icon.svg" alt="Email" style="width: 20px; height: 20px; margin-right: 6px;">
+      Email
     </button>
-    <div>
-      <img src="/assets/icon/address_europass_icon.svg" alt="Address"> 2500 Valby, Denmark
-    </div>
+
+    <a>
+      <img src="/assets/icon/address_europass_icon.svg" alt="Address" style="width: 20px; height: 20px; margin-right: 6px;">
+      2500 Valby, Denmark
+    </a>
+
   </div>
 </header>
-
-<script>
-  const email = "nielspeterkc@gmail.com";
-  document.getElementById("copy-email").addEventListener("click", () => {
-    navigator.clipboard.writeText(email).then(() => {
-      alert("Email address copied to clipboard!");
-    });
-  });
-</script>
-
-<nav>
-  <a href="index.html">Home</a>
-  <a href="work.html">Work</a>
-</nav>
