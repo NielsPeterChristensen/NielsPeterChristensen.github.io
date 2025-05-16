@@ -8,50 +8,8 @@
 </head>
 
 <body>
-  <header>
-    <h1>Niels Peter Christensen</h1>
-    <img src="/assets/img/profile.jpg" alt="profile picture" class="profile-pic">
-
-    <div class="links">
-      <a href="https://github.com/NielsPeterChristensen" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/icon/github_europass_icon.svg" alt="GitHub">
-        GitHub
-      </a>
-
-      <a href="https://linkedin.com/in/nielspeterkc" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/icon/linkedin_europass_icon.svg" alt="LinkedIn">
-        LinkedIn
-      </a>
-
-      <button id="copy-email">
-        <img src="/assets/icon/mail_europass_icon.svg" alt="Email">
-        Email
-      </button>
-
-      <div>
-        <img src="/assets/icon/address_europass_icon.svg" alt="Address">
-        2500 Valby, Denmark
-      </div>
-    </div>
-
-  </header>
-
-
-
-  <script>
-    const email = "nielspeterkc@gmail.com";
-
-    document.getElementById("copy-email").addEventListener("click", () => {
-      navigator.clipboard.writeText(email).then(() => {
-        alert("Email address copied to clipboard!");
-      });
-    });
-  </script>
-
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="work.html">Work</a>
-  </nav>
+  <div id="header-container"></div>
+  <script src="/scripts/loadHeader.js"></script>
 
   <section class="intro">
     <h2>About me</h2>

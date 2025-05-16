@@ -43,30 +43,9 @@ section.intro {
   margin-top: 20px;
 }
 
-.links a,
-.links button,
-.links div {
-  display: inline-flex;
-  align-items: center;
+
+.links a {
+  margin: 0 10px;
   text-decoration: none;
   color: #444;
-  font: inherit;
-  background: none;
-  border: none;
-  cursor: pointer;
 }
-
-.links img {
-  width: 20px;
-  height: 20px;
-  margin-right: 6px;
-  vertical-align: middle;
-}
-
-.links a:hover,
-.links button:hover {
-  color: #007acc;
-}
-
-
-
