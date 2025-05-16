@@ -28,11 +28,12 @@ nav a {
   margin: 0 10px;
   text-decoration: none;
   /* color: #1494cc; */
-  color: #628698;
+  /* color: #628698; */
+  color: #444
 }
 
 nav a:visited {
-  color: #628698; /* Same color as unvisited links */
+  color: #444; /* Same color as unvisited links */
 }
 
 section.intro {
