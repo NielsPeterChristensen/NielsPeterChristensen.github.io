@@ -49,3 +49,16 @@ section.intro {
   text-decoration: none;
   color: #444;
 }
+
+.links button {
+  font: inherit;
+  color: #444;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+  margin: 0 10px;
+  text-decoration: none;
+}
