@@ -20,7 +20,14 @@
   <section class="Thesis">
     <h3>Master Thesis</h3>
     <p>
-      For my master thesis, I am working on a project titled "Investigating subglacial hydrological activity through Synthetic Aperture Radar interferometry (InSAR) measurements and machine learning methods"
+      For my master thesis, I am working on a project titled <em>"Investigating subglacial hydrological activity through Synthetic Aperture Radar interferometry (InSAR) measurements and machine learning methods"</em>.
+      The goal of the project has been to develop a pipeline for automatic detect of regions with subglacial hydrological activity in Sentinel-1 data. This data is preprocessed using a DTU-build software to form double-difference interferograms.  
+
+      I have found that it works well to combine a pretrained foundational model with a linear classifier that is trained on a relatively small amount of labeled data.  
+      For the foundational model I use DINO (self-*di*stillation with *no* labels). The idea is to extract latent features from the interferograms with DINO and then pass these features representations to a linear classifier. It is then the linear classifier that predicts whether a region is subglacially active or not.
+      
+      I have tested the pipeline on a small region of Antarctica, and found that it works well. I have also tested different configurations of the processing chain to see how it affects the performance of the model.  
+      The code is available on GitHub: <a href="https://github.com/NielsPeterChristensen/SGLNet">SGLNet</a>.
     </p>
   </section>
 </body>
