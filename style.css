@@ -11,6 +11,22 @@ header {
   text-align: center;
 }
 
+h3 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+ul {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  padding-left: 20px;
+}
+
 img.profile-pic {
   width: 150px;
   height: 150px;
@@ -41,6 +57,12 @@ nav a {
 
 nav a:visited {
   color: #444; /* Same color as unvisited links */
+}
+
+a,
+a:visited {
+  color: #444;           /* normal color */
+  text-decoration: none; /* remove underline if desired */
 }
 
 section.intro {
@@ -86,4 +108,8 @@ section.intro {
   display: inline-flex;
   align-items: center;
   margin: 0 10px;
+}
+
+.bold {
+  font-weight: bold;
 }

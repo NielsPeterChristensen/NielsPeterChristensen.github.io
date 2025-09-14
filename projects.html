@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Work – Niels Peter Christensen</title>
+  <title>My projects – Niels Peter Kirkegaard Christensen</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -11,23 +11,37 @@
   <script src="/scripts/loadHeader.js"></script>
 
   <section class="intro">
-    <h2>My Work</h2>
+    <h2>My projects</h2>
     <p>
       Here follows a short summary of my academic work and projects.
     </p>
   </section>
 
   <section class="Thesis">
-    <h3>Master Thesis</h3>
+    <h3>Master's Thesis (35 ECTS)</h3>
     <p>
-      For my master thesis, I am working on a project titled <em>"Investigating subglacial hydrological activity through Synthetic Aperture Radar interferometry (InSAR) measurements and machine learning methods"</em>.<br>
-      The goal of the project has been to develop a pipeline for automatic detect of regions with subglacial hydrological activity in Sentinel-1 data. This data is preprocessed using a DTU-build software to form double-difference interferograms.<br>
+      My MSc thesis is titled <em>"Investigating subglacial hydrological activity through Synthetic Aperture Radar interferometry (InSAR) measurements and machine learning methods"</em>.<br>
+      The goal of the project was to develop a pipeline for automatic detection of regions with subglacial hydrological activity in Sentinel-1 data. This data is preprocessed using a DTU-developed software to form double-difference interferograms.<br>
       <br>
       I have found that it works well to combine a pretrained foundational model with a linear classifier that is trained on a relatively small amount of labeled data.<br>
-      For the foundational model I use DINO (self-<em>di</em>stillation with <em>no</em> labels). The idea is to extract latent features from the interferograms with DINO and then pass these features representations to a linear classifier. It is then the linear classifier that predicts whether a region is subglacially active or not.<br>
+      For the foundational model I use DINO (self-<em>di</em>stillation with <em>no</em> labels). The idea is to extract latent features from the interferograms with DINO and then pass these feature representations to a linear classifier. It is then the linear classifier that predicts whether the subglacial environment is hydrologically active or not.<br>
       <br>
-      I have tested the pipeline on a small region of Antarctica, and found that it works well. I have also tested different configurations of the processing chain to see how it affects the performance of the model.<br>
-      The code is available on GitHub: <a href="https://github.com/NielsPeterChristensen/SGLNet">SGLNet</a>.
+      I have tested the pipeline on a portion of Antarctica (10⁶ km²), and found that it works well. I have also tested different configurations of the processing chain to see how it affects the performance of the model.<br>
+      The code is available on GitHub: <a href="https://github.com/NielsPeterChristensen/SGLNet">SGLNet</a>.<br>
+      The report is available here: <a href="assets/docs/Thesis.pdf" target="_blank">MSc Thesis Report</a>.<br>
+    </p>
+    <h3>Synthesis (10 ECTS)</h3>
+    <p>
+      In this project, I worked on the development of a preprocessing software for tomographic SAR (TomoSAR) data. The data was acquired from Greenland using the Danish EMISAR system, sponsored by ESA in 2012.In this project, I worked on the development of a preprocessing software for tomographic SAR (TomoSAR) data. The data was acquired from Greenland as part of ESA's IceSAR campaign.<br>
+      Together with two colleagues, I implemented azimuth-compression using Direct Back-Projection (DBP), and phase calibration using Phase Centre Double Localization (PCDL). Finally, tomographic focusing was carried out using both beamforming (Fourier) and spectral estimation techniques (Capon and MUSIC).<br>
+      The report is available here: <a href="assets/docs/TomoSAR.pdf" target="_blank">TomoSAR Report</a>.<br>
+    </p>
+    <h3>Bachelor's Thesis (15 ECTS)</h3>
+    <p>
+      My BSc thesis was undertaken in collaboration with the Danish radar company Weibel Scientific A/S. It was titled <em>"Improved Refraction Compensation Model for Satellite Measurements"</em>.<br>
+      The goal of the project was to estimate the position uncertainty of ground-to-space radar tracking when using a standard atmospheric correction, as opposed to a detailed spatio-temporal refraction compensation model.<br>
+      I developed the compensation model using ERa5 reanalysis data from the European Centre for Medium-Range Weather Forecasts (ECMWF) and used a numerical Runge Kutta integration scheme to ray trace the radar signals through the atmosphere.<br>
+      The report and its findings are intellectual property of Weibel Scientific A/S and cannot be shared publicly.
     </p>
   </section>
 </body>
