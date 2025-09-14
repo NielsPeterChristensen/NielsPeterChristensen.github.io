@@ -113,10 +113,3 @@ section.intro {
 .bold {
   font-weight: bold;
 }
-
-.extra-padding {
-  padding-top: 0.5em;    /* space above */
-  padding-bottom: 0px; /* space below */
-  padding-left: 0px;   /* optional left */
-  padding-right: 0px;  /* optional right */
-}

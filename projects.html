@@ -19,12 +19,10 @@
 
   <section class="Thesis">
     <h3>Master's Thesis (35 ECTS)</h3>
-    <p>My MSc thesis is titled <em>"Investigating subglacial hydrological activity through Synthetic Aperture Radar interferometry (InSAR) measurements and machine learning methods"</em>.<br>
-    The goal of the project was to develop a pipeline for automatic detection of regions with subglacial hydrological activity in Sentinel-1 data. This data is preprocessed using a DTU-developed software to form double-difference interferograms.</p>
-    <p>I have found that it works well to combine a pretrained foundational model with a linear classifier that is trained on a relatively small amount of labeled data.</p>
-    <p>For the foundational model I use DINO (self-<em>di</em>stillation with <em>no</em> labels). The idea is to extract latent features from the interferograms with DINO and then pass these feature representations to a linear classifier. It is then the linear classifier that predicts whether the subglacial environment is hydrologically active or not.</p>
-    <p>I have tested the pipeline on a portion of Antarctica (10⁶ km²), and found that it works well. I have also tested different configurations of the processing chain to see how it affects the performance of the model.</p>
-    <p class="extra-padding">The code is available on GitHub: <a href="https://github.com/NielsPeterChristensen/SGLNet">SGLNet</a></p>
+    <p>My MSc thesis is titled <em>"Investigating subglacial hydrological activity through Synthetic Aperture Radar interferometry (InSAR) measurements and machine learning methods"</em>.</p>
+    <p>
+      The goal of the project was to develop a pipeline for automatic detection of regions with subglacial hydrological activity in Sentinel-1 data. This data is preprocessed using a DTU-developed software to form double-difference interferograms. I have found that it works well to combine a pretrained foundational model with a linear classifier that is trained on a relatively small amount of labeled data. For the foundational model I use DINO (self-<em>di</em>stillation with <em>no</em> labels). The idea is to extract latent features from the interferograms with DINO and then pass these feature representations to a linear classifier. It is then the linear classifier that predicts whether the subglacial environment is hydrologically active or not. I have tested the pipeline on a portion of Antarctica (10⁶ km²), and found that it works well. I have also tested different configurations of the processing chain to see how it affects the performance of the model.</p>
+    <p>The code is available on GitHub: <a href="https://github.com/NielsPeterChristensen/SGLNet">SGLNet</a></p>
     <p>The report is available here: <a href="assets/docs/Thesis.pdf" target="_blank">MSc Thesis Report</a></p>
 
     <h3>Synthesis (10 ECTS)</h3>
