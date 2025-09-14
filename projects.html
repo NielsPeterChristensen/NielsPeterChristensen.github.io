@@ -20,26 +20,23 @@
   <section class="Thesis">
     <h3>Master's Thesis (35 ECTS)</h3>
     <p>My MSc thesis is titled <em>"Investigating subglacial hydrological activity through Synthetic Aperture Radar interferometry (InSAR) measurements and machine learning methods"</em>.</p>
-    <p>
-      The goal of the project was to develop a pipeline for automatic detection of regions with subglacial hydrological activity in Sentinel-1 data. This data is preprocessed using a DTU-developed software to form double-difference interferograms. I have found that it works well to combine a pretrained foundational model with a linear classifier that is trained on a relatively small amount of labeled data. For the foundational model I use DINO (self-<em>di</em>stillation with <em>no</em> labels). The idea is to extract latent features from the interferograms with DINO and then pass these feature representations to a linear classifier. It is then the linear classifier that predicts whether the subglacial environment is hydrologically active or not. I have tested the pipeline on a portion of Antarctica (10⁶ km²), and found that it works well. I have also tested different configurations of the processing chain to see how it affects the performance of the model.</p>
+    <p>The goal of the project was to develop a pipeline for automatic detection of regions with subglacial hydrological activity in Sentinel-1 data. This data is preprocessed using a DTU-developed software to form double-difference interferograms.</p>
+    <p>I combine a pretrained foundational model with a linear classifier that is trained on a relatively small amount of labeled data. For the foundational model I use DINO (self-<em>di</em>stillation with <em>no</em> labels). The idea is to extract latent features from the interferograms with DINO and then pass these feature representations to the linear classifier, which then predicts whether the subglacial environment is hydrologically active or not.</p>
+    <p>I have tested the pipeline on a portion of Antarctica (10⁶ km²), and found that it works well. I have also tested different configurations of the processing chain to see how it affects the performance of the model.</p>
     <p>The code is available on GitHub: <a href="https://github.com/NielsPeterChristensen/SGLNet">SGLNet</a></p>
     <p>The report is available here: <a href="assets/docs/Thesis.pdf" target="_blank">MSc Thesis Report</a></p>
 
     <h3>Synthesis (10 ECTS)</h3>
-    <p>
-      In this project, I worked on the development of a preprocessing software for tomographic SAR (TomoSAR) data. The data was acquired from Greenland using the Danish EMISAR system, sponsored by ESA in 2012.In this project, I worked on the development of a preprocessing software for tomographic SAR (TomoSAR) data. The data was acquired from Greenland as part of ESA's IceSAR campaign.<br>
-      Together with two colleagues, I implemented azimuth-compression using Direct Back-Projection (DBP), and phase calibration using Phase Centre Double Localization (PCDL). Finally, tomographic focusing was carried out using both beamforming (Fourier) and spectral estimation techniques (Capon and MUSIC).<br>
-      <br>
-      The report is available here: <a href="assets/docs/TomoSAR.pdf" target="_blank">TomoSAR Report</a>.<br>
-    </p>
+    <p>This project carried the title <em>"Tomographic SAR Mapping of Ice Sheets"</em></p>
+    <p>Together with two colleagues, I developed a preprocessing software for tomographic SAR (TomoSAR) data. The data was acquired from Greenland as part of ESA's IceSAR campaign.</p>
+    <p>The processing chain included azimuth-compression using Direct Back-Projection (DBP), and phase calibration using Phase Centre Double Localization (PCDL). Finally, tomographic focusing was carried out using both beamforming (Fourier) and spectral estimation techniques (Capon and MUSIC).</p>
+    <p>The report is available here: <a href="assets/docs/TomoSAR.pdf" target="_blank">TomoSAR Report</a></p>
+
     <h3>Bachelor's Thesis (15 ECTS)</h3>
-    <p>
-      My BSc thesis was undertaken in collaboration with the Danish radar company Weibel Scientific A/S. It was titled <em>"Improved Refraction Compensation Model for Satellite Measurements"</em>.<br>
-      The goal of the project was to estimate the position uncertainty of ground-to-space tracking when using a standard atmospheric correction, as opposed to a detailed spatio-temporal refraction compensation model.<br>
-      I developed the compensation model using ERa5 reanalysis data from the European Centre for Medium-Range Weather Forecasts (ECMWF) and used a numerical Runge Kutta integration scheme to ray trace the radar signals through the atmosphere.<br>
-      <br>
-      The report and its findings are intellectual property of Weibel Scientific A/S and cannot be shared publicly.
-    </p>
+    <p>My BSc thesis is titled <em>"Improved refraction compensation model for satellite measurements"</em>, and it was undertaken in collaboration with the Danish radar company Weibel Scientific A/S.</p>
+    <p>The goal of the project was to estimate the position uncertainty of ground-to-space tracking when using a standard atmospheric correction, as opposed to a detailed spatio-temporal refraction compensation model.</p>
+    <p>I developed the compensation model using ERA5 reanalysis data from the European Centre for Medium-Range Weather Forecasts (ECMWF) and used a numerical Runge Kutta integration scheme to ray trace the radar signals through the atmosphere.</p>
+    <p>The report and its findings are intellectual property of Weibel Scientific A/S and cannot be shared publicly.</p>
   </section>
 </body>
 </html>
